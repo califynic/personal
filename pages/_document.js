@@ -6,7 +6,7 @@ import * as control from '../myfuncs.js'
 
 class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
-    console.log("Hello from line 9");
+    console.log("Hello from line 9!!");
     const sheet = new ServerStyleSheet();
     console.log("Hello from line 11");
     const page = renderPage(App => props =>
