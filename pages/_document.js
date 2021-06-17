@@ -1,11 +1,11 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
+//import { ServerStyleSheet } from 'styled-components';
 import theme from '../config';
 import * as control from '../myfuncs.js'
 
 class MyDocument extends Document {
-  static async getInitialProps({ renderPage }) {
+  /*static async getInitialProps({ renderPage }) {
     console.log("Hello from line 9!!");
     const sheet = new ServerStyleSheet();
     console.log("Hello from line 11");
@@ -19,7 +19,7 @@ class MyDocument extends Document {
       ...page,
       styleTags,
     };
-  }
+  }*/
 
   render() {
     const { styleTags } = this.props;
