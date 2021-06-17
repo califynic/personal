@@ -1,5 +1,5 @@
 import React from 'react';
-import App, Container from 'next/app';
+import App,  { Container } from 'next/app';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import theme from '../config';
 import '../styles.css';
