@@ -14,11 +14,14 @@
   "license": "ISC",
   "dependencies": {
     "babel-plugin-styled-components": "latest",
+    "metaballs-js": "^2.0.0",
     "next": "canary",
+    "perlin-noise": "0.0.1",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
     "seeded-rand": "^2.0.1",
+    "simplex-noise": "^2.4.0",
     "styled-components": "^4.4.1",
     "webpack": "latest"
   },

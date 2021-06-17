@@ -31,10 +31,12 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content={theme.primary} />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
           {styleTags}
         </Head>
-        <body>
-          <canvas style={{position: "absolute", opacity: "0", zIndex: "-100"}} width="1000" height="1000" id="stars" />
+        <body style={{backgroundColor: "black"}}>
+          <canvas style={{position: "fixed", opacity: "0", zIndex: "0"}} width="900" height="900" id="stars" />
           <Main />
           <NextScript />
         </body>
