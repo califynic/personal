@@ -8,11 +8,13 @@ class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
     console.log("Hello from line 9");
     const sheet = new ServerStyleSheet();
+    console.log("Hello from line 11");
     const page = renderPage(App => props =>
       sheet.collectStyles(<App {...props} />)
     );
+    console.log("Hello from line 15");
     const styleTags = sheet.getStyleElement();
-
+    console.log("Hello from line 17");
     return {
       ...page,
       styleTags,
